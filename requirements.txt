@@ -1,0 +1,16 @@
+# ADK + Agent Gateway + Agent Retrieval integration probe.
+#
+# Deploy source of truth: deploy/deployer.py ships this list to Agent Runtime.
+
+google-adk[mcp]>=2.3.0
+google-genai>=2.10.0
+# 2.x for the top-level `agentplatform` package scripts/query_deployed.py uses.
+google-cloud-aiplatform>=2.1.0
+# Agent Retrieval (Vector Search 2.0) — the direct-SDK egress path.
+google-cloud-vectorsearch>=0.11.1
+# Reading Agent Gateway inspection logs back out.
+google-cloud-logging>=3.11.0
+python-dotenv>=1.0
+cloudpickle>=3.1
+# Agent Runtime checks for pydantic explicitly when validating the package.
+pydantic>=2.10

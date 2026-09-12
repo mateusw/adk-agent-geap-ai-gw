@@ -1,0 +1,120 @@
+# Agent instruction files and working notes (local only)
+CLAUDE.md
+AGENTS.md
+ai/
+
+# ---------------------------------------------------------------------------
+# Secrets and credentials
+# ---------------------------------------------------------------------------
+
+# Environment files
+.env
+.env.*
+*.env
+!.env.example
+!.env.sample
+
+# Private keys, certificates, keystores
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.ppk
+*.asc
+*.gpg
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+*_rsa
+*_ed25519
+
+# Cloud provider credentials
+application_default_credentials.json
+service-account*.json
+*service_account*.json
+*-serviceaccount.json
+client_secret*.json
+credentials.json
+gha-creds-*.json
+.aws/
+.azure/
+.gcloud/
+gcloud/
+
+# Kubernetes and Docker
+kubeconfig
+*.kubeconfig
+.kube/
+.dockercfg
+.docker/config.json
+
+# Tool and registry credentials
+.netrc
+.npmrc
+.pypirc
+.git-credentials
+.htpasswd
+
+# Terraform (state files store secrets in plaintext)
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform/
+
+# Generic secret containers
+secrets/
+secrets.*
+*.secret
+*.secrets
+*_secrets.*
+
+# ---------------------------------------------------------------------------
+# Scratch and temporary material
+# ---------------------------------------------------------------------------
+tmp/
+temp/
+scratch/
+*.tmp
+*.bak
+*.orig
+*.swp
+*~
+*.log
+logs/
+
+# Local data dumps (may contain real records)
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.dump
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# ---------------------------------------------------------------------------
+# Notebooks
+# ---------------------------------------------------------------------------
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# OS and editor cruft
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Generated gateway YAML (contains the project id)
+deploy/_generated/
