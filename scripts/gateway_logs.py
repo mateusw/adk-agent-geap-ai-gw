@@ -55,7 +55,7 @@ def _summarize(payload: dict) -> str:
     """One line per request.
 
     The emitted schema is not the published one: entries are
-    LoadBalancerLogEntry, there is no serviceEntensionsInfo, and authorization
+    LoadBalancerLogEntry, there is no serviceExtensionsInfo, and authorization
     appears as authzPolicyInfo.
     """
     info = payload.get("agentGatewayInfo", {}) or {}
